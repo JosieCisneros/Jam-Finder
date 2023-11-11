@@ -3,21 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IP Address Finder</title>
+    <title>Star Wars Character Finder</title>
     <script src="index.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>IP Address Finder</h2>
-    <form id="ipFinder" action="click">
-        <label for="city">City</label>
-        <input type="text" id="city">
-        <button type="submit">Search</button>
+    <h2>Star Wars Character Finder</h2>
+    <form id="Finder" action="click">
+        <label for="film">Film</label>
+        <select name="type" id="film">
+            <option value="0">Select Film</option>
+            <option value="1">A New Hope</option>
+            <option value="2">The Empire Strikes Back</option>
+            <option value="3">Return of the Jedi</option>
+            <option value="4">The Phantom Menace</option>
+            <option value="5">Attack of the Clones</option>
+            <option value="6">Revenge of the Sith</option>
+        </select>
+        <input type="submit" name="Search">
     </form>
 
-    <ul class="listContainer">
-        <li><a href="#">zipCodes</a></li>
-        <li><a href="#">ipAddress</a></li>
-    </ul>
+    <div id="searchContainer">
+        <ul id="character">
+
+        </ul>
+        <ul id="species">
+
+        </ul>
+    </div>
 </body>
 </html>

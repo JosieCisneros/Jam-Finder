@@ -1,4 +1,12 @@
+body {
+    background-color: darkcyan;
+}
+
+.searchContainer {
+    background-color: white;
+    display: flex;
+}
+
 ul {
- list-style: none; 
- display: none; 
+ list-style: none;
 }

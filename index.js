@@ -72,7 +72,8 @@ function getBio(element) {
         console.log(data)
         //creates a list item with bio data
         const bioList = document.createElement('li')
-        bioList.appendChild(document.createTextNode([data.gender, data.eye_color, data.birth_year]))
+        bioList.appendChild(document.createTextNode([
+            "Gender: " + data.gender, " Eye Color: " + data.eye_color, " Birth Year: " + data.birth_year]))
         //gets character name element by id
         const characterElement = document.getElementById(data.name)
         //hide the bio list

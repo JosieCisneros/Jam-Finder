@@ -1,5 +1,8 @@
 body {
-    background-color: darkcyan;
+    background-color: black;
+    color: white;
+    background-image: url("images/galexy.jpg");
+    background-size: 800px;
 }
 
 .searchContainer {
@@ -10,3 +13,4 @@ body {
 ul {
  list-style: none;
 }
+

@@ -8,7 +8,7 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     //search is equal to user input
     const search = (film.value)
-    console.log(search)
+    //console.log(search)
     //empties the list of characters
     character.innerHTML = ""
     //pass the user input to get films
@@ -20,7 +20,7 @@ function getFilms(search) {
     return fetch ("https://swapi.dev/api/films/" + search)
     .then (res => res.json())
     .then (data => {
-        console.log(data)
+        //console.log(data)
         //characterLinks is a list of every character in the movie
         const characterLinks = data.characters
         //for every character in the movie get their character data and bio data
@@ -58,7 +58,7 @@ function getCharacter(element) {
         })
         //when name is clicked unhide the bio
         entry.addEventListener("click", function handleClick(){
-            console.log(data.name + "_bio")
+            //console.log(data.name + "_bio")
             document.getElementById(data.name + "_bio").style.display = "block"
         })
     }) 
@@ -69,7 +69,7 @@ function getBio(element) {
     return fetch(element)
     .then(res => res.json())
     .then(data => {
-        console.log(data)
+        //console.log(data)
         //creates a list item with bio data
         const bioList = document.createElement('li')
         bioList.appendChild(document.createTextNode([
@@ -80,7 +80,7 @@ function getBio(element) {
         bioList.style.display = "none"
         //sets the bio to the specific bio characters name
         bioList.setAttribute("id", data.name + "_bio")
-        console.log(characterElement)
+        //console.log(characterElement)
         //append the bio to the character element
         characterElement.appendChild(bioList)
     })

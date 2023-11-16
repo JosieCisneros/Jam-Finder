@@ -18,13 +18,15 @@ This application also features three different functions; getFilms, getCharacter
 
 getFilms fetches data from an api then returns the “characters” data. It then calls on the other two functions for each character (element) in the movie to get their character data and their bio data.
 
-
+![alt text]("images/film.png")
 
 getCharacter uses (element) to fetch the data about the character and then appends the characters name to a list item with the characters name. This function also uses two event listeners to change the style color to blue with a (mouseover) event and changes the style color to white with a (mouseout) event. A third event listener is added in this function that unhides the bio information when a name is clicked.
 
-
+![alt text]("images/character.png")
 
 getBio uses (element) to fetch the data about the characters bio information (gender, eye color and birth year) and then creates a list item with the bio data to then append it to the character element. This function also hides the bio list initially and sets the bio data to a specific bio character’s name. 
+
+![alt text]("images/bio.png")
 
 
 

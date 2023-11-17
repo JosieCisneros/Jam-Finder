@@ -18,15 +18,15 @@ This application also features three different functions; getFilms, getCharacter
 
 getFilms fetches data from an api then returns the “characters” data. It then calls on the other two functions for each character (element) in the movie to get their character data and their bio data.
 
-![screenshot]("images/film.png")
+![screenshot](images/film.png)
 
 getCharacter uses (element) to fetch the data about the character and then appends the characters name to a list item with the characters name. This function also uses two event listeners to change the style color to blue with a (mouseover) event and changes the style color to white with a (mouseout) event. A third event listener is added in this function that unhides the bio information when a name is clicked.
 
-![screenshot]("images/character.png")
+![screenshot](images/character.png)
 
 getBio uses (element) to fetch the data about the characters bio information (gender, eye color and birth year) and then creates a list item with the bio data to then append it to the character element. This function also hides the bio list initially and sets the bio data to a specific bio character’s name. 
 
-![screenshot]("images/bio.png")
+![screenshot](images/bio.png)
 
 ___________________________________________________________________________________
 
@@ -44,13 +44,13 @@ A fetch is a function that retrieves data through an API URL (more on what this 
 
 The data that is returned is not something that you can just use though. You will have to add .json() to the end of your response in order to take the data and format it into a string that you can then use in your code.
 
-![screenshot]("images/blog1.png")
+![screenshot](images/blog1.png)
 
 After you have returned your response you are then able to do another .then() in order to use the data that you fetched in any function that you would like.
 
 For example in my project I decided to fetch the film data from my API and use it to get the characters name and some of their bio information.
 
-![screenshot]("images/film.png")
+![screenshot](images/film.png)
 
 API
 
@@ -68,19 +68,19 @@ Now that we understand what API and fetch is we can now get into how to fetch a 
 
 To start off you will want to grab the data that you will be using from the original API by using a fetch() and .then() as explained above. In my example I wanted to pull all the data from each individual movie film.
 
-![screenshot]("images/blog2.png")
+![screenshot](images/blog2.png)
 
 Then with the data you just pulled you will want to write a function that uses other API links that you can use to fetch. 
 
 In my project I wanted to pull the characters name and their bio information. In this example let’s just focus on the character name. I had to create a variable called “characterLinks” that would pull all the individual character's API links. Using .forEach() I was able to write a function for what I wanted to do for each element. In this case, pull the character's name.
 
-![screenshot]("images/blog3.png")
+![screenshot](images/blog3.png)
 
 Now your function is set up to fetch data from your original API you can then fetch that data again and use it to write any function that you want.
 
 In my project I wanted to fetch all of the character names for each character API link. To do this I wrote a function that fetched the elements of “characterLinks”, returned the response in JSON format and then used that data to create a list and append the names to that list.
  
-![screenshot]("images/character.png")
+![screenshot](images/character.png)
 
 For getting the bio information I was able to use the same process with using the .forEach element created in the original fetch.
 
